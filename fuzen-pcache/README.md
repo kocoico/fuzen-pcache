@@ -9,10 +9,10 @@ require_once ("engine/util/FuzenCacheControl.php");
 ?>
 
 Step 3 - Until your page code, please, create a instance of FuzenCacheControl. The constructor have 2 params. First param is the time-life of your page cached.
-The second param is the path to their page file cached. Below the example show how configure time-life for 8 hours and index page.
+The second param is the path to their page file cached. Below the example show how configure time-life for 60 minutes or 1 hour and index page.
 <?php
 require_once ("engine/util/FuzenCacheControl.php");
-$fuzenCacheControl = new FuzenCacheControl(8, "cache/index.html");
+$fuzenCacheControl = new FuzenCacheControl(60, "cache/index.html");
 ?>
 
 Step 4 - End of your ALL code page, please call endCache method.
@@ -21,3 +21,4 @@ $fuzenCacheControl->endCache();
 ?>
 
 End.
+Built with article: http://www.theukwebdesigncompany.com/articles/php-caching.php
